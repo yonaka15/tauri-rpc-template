@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-// @ts-expect-error process is a nodejs global
-const host = process.env.TAURI_DEV_HOST;
+// Tauri 2.0ではTAURI_DEV_HOSTの代わりにおそらくTAURI_CLI_DEV_HOSTになっている
+const host = process.env.TAURI_CLI_DEV_HOST;
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({

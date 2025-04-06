@@ -14,11 +14,13 @@
       {
         "title": "app-with-rpc",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "label": "main"
       }
     ],
     "security": {
-      "csp": null
+      "csp": null,
+      "capabilities": ["main-capability"]
     }
   },
   "bundle": {
